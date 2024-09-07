@@ -1,0 +1,88 @@
+<!--An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+     The HTML <form> element is used to create an HTML form for user input:
+        The HTML <form> element can contain one or more of the following form elements:
+          <input>
+          <label>
+          <select>
+          <textarea>
+          <button> 
+          <fieldset>
+          <legend>
+          <datalist>         link : https://www.geeksforgeeks.org/rest-api-introduction/?ref=header_search  (data sent to server)
+          <output>
+          <option>
+          <optgroup>
+
+1.<input> element
+The HTML <input> element is the most used in  form element.
+An <input> element can be displayed in many ways, depending on the 'type'
+
+2.<label> element:
+The <label> tag defines a label for many form elements.
+The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.-->
+<!doctype html>
+<html>
+    <body>
+      <h2 class ="nav-left">about HTML FORM element</h2>
+      <!--The 'for' attribute of the <label> tag should be equal to the 'id' attribute of the <input> element to bind them together.-->
+      <form>
+        <!-- <input type="text"> : 	Displays a single-line text input field-->
+       <label for="fname">FIRST NAME:</label><br> 
+       <input type="text" id="fname" name="surname"><br><!--'name' and 'value' are submited to servers-->
+       <label for="lname">LAST NAME:</label><br>
+       <input type="text" id="lname" name="fullname">
+       <hr>
+       <!-- <input type="radio"> :	Displays a radio button (for selecting one of many choices)
+              must having same 'name' to all radio buttons-->
+       <p>select your favourate language </p>
+       <input type="radio" id="html" name="language" value="HTML">
+       <label for="html">HTML</label><br>
+       <input type="radio" id="css" name="language" value="CSS"><!--'name' and 'value' are submited to servers-->
+       <label for="css">CSS</label><br>
+       <input type="radio" id="javascript" name="language" value="JAVASCRIPT">
+       <label>JAVASCRIPT</label>
+       <hr>
+       <!--<input type="checkbox"> :	Displays a checkbox (for selecting zero or more of many choices)
+              'name' not neccesary-->      
+        <input type="checkbox" id="Bike" name="vehicle1" value="bike">
+        <label for="Bike">I Have Bike</label></br>
+        <input type="checkbox" id="Car" name="vehicle2" value="car">
+        <label for="car">I Have car</label></br>
+        <input type="checkbox" id="jet" name="vehicle2" value="jet">
+        <label for="jet">I Have jet</label></br>
+        <hr>
+        <!-- <input type="button">   :  displays a clickable button -->
+        <h3>input buttons</h3>
+        <input type="button" id="Button" name=" simple_Button" value=" html_button"><br><br>
+        <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+        <hr>
+
+
+
+        <!-- email and submit requires 'action' attribute of an element
+                as <form action="/action_page.php"> -->
+        <!-- <input type="submit">    : Displays a submit button which will send data to server when clicked-->
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="submit"><br>
+            <hr>
+        <!--<input type="email">   :   used for input fields that should contain an e-mail address.--> 
+            <label for="email">enter the email:</label>
+            <input type="email" id="E-mail" name="mail"><br><br>
+            <label for="pwd"> password:</label> 
+            <input type="password" id="pwd"><br><br>
+            <input type="submit" value="submit">
+            
+      </form>
+    </body>
+</html>
+        
+ -------------------------------------------------------------------------------------------------------------
+
+<!--  Working: A request is sent from client to server in the form of a web URL as HTTP GET or POST or PUT or DELETE request. 
+  After that, a response comes back from the server in the form of a resource which can be anything like HTML, XML, Image, or JSON.
+   But now JSON is the most popular format being used in Web Services
+  -->
+  ---------------------------------------------------------------------------------------------------------------
